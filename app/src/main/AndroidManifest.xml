@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationForClass">
+
+        <!-- Launcher / main activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -18,10 +20,16 @@
             android:theme="@style/Theme.MyApplicationForClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Extra reference activities (no launcher icons) -->
+        <activity android:name=".ReferenceActivity1" />
+        <activity android:name=".ReferenceActivity2" />
+        <activity android:name=".ReferenceActivity3" />
+        <activity android:name=".ReferenceActivity4" />
+
     </application>
 
 </manifest>
